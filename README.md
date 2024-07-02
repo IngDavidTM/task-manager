@@ -3,7 +3,7 @@
 <div align="center">
   <h1><b>Task Manager</b></h1>
   </br>
-  <img src="https://example.com/path-to-your-logo.png" alt="logo" width="250"  height="auto" />
+  <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWM2cjV6bHBjM3Fyb3NzZmQ2NjcwNjN3NmtoaG1hMmh3YzJzNDNwcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26ufnwz3wDUli7GU0/giphy.gif" alt="logo" width="250"  height="auto" />
   <br>
 </div>
 
@@ -63,7 +63,7 @@ This project is a task management application built with Vue.js and Vuex, utiliz
 
 ## 🚀 Live Demo
 
-- [Live Demo](https://your-live-demo-url.com)
+- [Live Demo](https://task-manager-nu-nine.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
