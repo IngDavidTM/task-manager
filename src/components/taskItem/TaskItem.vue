@@ -3,7 +3,7 @@
     <h2>{{ task.title }}</h2>
     <p>{{ task.description }}</p>
     <span>{{ formatDate(task.dueDate) }}</span>
-    <input type="checkbox" @click="updateCheckbox()" :checked="task.completed" />
+    <input type="checkbox" :checked="task.completed" @click="updateCheckbox()">
     <button @click="deleteTask(task.id)">Delete</button>
   </li>
 </template>

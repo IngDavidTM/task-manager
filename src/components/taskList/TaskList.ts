@@ -37,6 +37,9 @@ export default defineComponent({
       return [];
     }
   },
+  mounted() {
+    this.changeTasksDisplayed('all');
+  },
   methods: {
     changeTasksDisplayed(filter: string) {
       this.isAllTasksActive = filter === 'all';
@@ -44,8 +47,5 @@ export default defineComponent({
       this.isCompletedTasksActive = filter === 'completed';
     },
     ...mapActions(['deleteCompletedTasks', 'deleteAllTasks']),
-  },
-  mounted() {
-    this.changeTasksDisplayed('all');
-  },
+  }
 });

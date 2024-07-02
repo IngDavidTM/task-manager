@@ -5,6 +5,6 @@ import TaskList from './components/taskList/TaskList.vue';
 
 const app = createApp(App);
 
-app.component('task-list', TaskList);
+app.component('TaskList', TaskList);
 
 app.use(store).mount('#app')

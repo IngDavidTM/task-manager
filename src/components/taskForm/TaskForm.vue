@@ -1,12 +1,12 @@
 <template>
   <form @submit.prevent="submitTask">
-    <input v-model="title" placeholder="Title" required />
+    <input v-model="title" placeholder="Title" required>
     <textarea
       v-model="description"
       placeholder="Description"
       required
-    ></textarea>
-    <input type="date" v-model="dueDate" required />
+    />
+    <input v-model="dueDate" type="date" required>
     <button type="submit">Add Task</button>
   </form>
 </template>

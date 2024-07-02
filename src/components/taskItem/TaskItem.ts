@@ -1,4 +1,4 @@
-import { defineComponent } from 'vue';
+import { defineComponent, PropType } from 'vue';
 import { mapActions } from 'vuex';
 
 interface DateTimeFormatOptions {
@@ -8,8 +8,22 @@ interface DateTimeFormatOptions {
   hour12: boolean
 }
 
+interface Task {
+  id: number;
+  title: string;
+  description: string;
+  completed: boolean;
+  dueDate?: Date;
+  category?: string;
+}
+
 export default defineComponent ({
-  props: ['task'],
+  props: {
+    task: {
+      type: Object as PropType<Task>,
+      required: true,
+    },
+  },
   methods: {
     updateCheckbox() {
       this.updateTask({ ...this.task, completed: !this.task.completed });
