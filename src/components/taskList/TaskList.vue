@@ -1,9 +1,24 @@
 <template>
   <div>
     <div class="display-container">
-      <button :class="{ active: isAllTasksActive }" @click="changeTasksDisplayed('all')">All Tasks</button>
-      <button :class="{ active: isPendingTasksActive }" @click="changeTasksDisplayed('pending')">Pending Tasks</button>
-      <button :class="{ active: isCompletedTasksActive }" @click="changeTasksDisplayed('completed')">Completed Tasks</button>
+      <button
+        :class="{ active: isAllTasksActive }"
+        @click="changeTasksDisplayed('all')"
+      >
+        All Tasks
+      </button>
+      <button
+        :class="{ active: isPendingTasksActive }"
+        @click="changeTasksDisplayed('pending')"
+      >
+        Pending Tasks
+      </button>
+      <button
+        :class="{ active: isCompletedTasksActive }"
+        @click="changeTasksDisplayed('completed')"
+      >
+        Completed Tasks
+      </button>
     </div>
     <task-form />
     <ul>
@@ -15,4 +30,4 @@
 </template>
 
 <script src="./TaskList.ts" lang="ts" />
-<style src="./TaskList.css" lang="css" scoped/>
+<style src="./TaskList.css" lang="css" scoped />
